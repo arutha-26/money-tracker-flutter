@@ -1,16 +1,19 @@
-# money_app_tracker
+# Money Tracker App
 
-Money App Tracker - Dhii
+A simple personal money tracking application built with Flutter.
 
-## Getting Started
+## ✨ Features
+- Record income & expenses
+- Attach receipt photos
+- Multi-user authentication
+- Secure data with row-level security
 
-This project is a starting point for a Flutter application.
+## 🛠 Tech Stack
+- Flutter
+- Supabase (Auth, Database, Storage)
 
-A few resources to get you started if this is your first Flutter project:
+## 🚧 Status
+Work in progress. This project is under active development.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📱 Platforms
+- Android

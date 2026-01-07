@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final supabase = Supabase.instance.client;
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   Future<void> _logout(BuildContext context) async {
-    await Supabase.instance.client.auth.signOut();
+    await supabase.auth.signOut();
 
     if (!context.mounted) return;
 
@@ -15,7 +28,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final user = Supabase.instance.client.auth.currentUser;
+    final user = supabase.auth.currentUser;
 
     return Scaffold(
       appBar: AppBar(

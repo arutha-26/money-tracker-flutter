@@ -16,6 +16,8 @@ linux/
 windows/
 macos/
 
+# Temporary debug helpers
+lib/debug/
 
 # IntelliJ related
 *.iml

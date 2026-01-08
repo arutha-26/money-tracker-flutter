@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:money_app_tracker/debug/transaction_insert_test.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,6 +15,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    testInsertTransaction();
   }
 
   Future<void> _logout(BuildContext context) async {
